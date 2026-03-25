@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessio's Pizzaria</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#bem-vindo">Home</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="bem-vindo">
+            <img class="img-bem-vindo" src="imagens/pizza-bem-vindo.png" alt="Pizza">
+            
+            <div class="container-texto">
+                <h1>Bem vindo à Alessio's</h1>
+                <p>Saborosas pizzas feitas especiamente para você!</p>
+                <div class="botao-ver-cardapio"><a href="#cardapio">Ver Cardápio</a></div>
+            </div>
+        </div>
+    
+        <div id="cardapio">
+            <div class="titulo-cardapio"><h1>Cardápio</h1></div>
+    
+            <div class="conteiner-pizza-cardapio">
+                <div><img class="img-pizza-cardapio" src="imagens/pizza-marguerita.jpeg" alt="Pizza marguerita"></div>
+                <div class="descricao-cardapio">
+                    <h2>Pizza marguerita</h2>
+                    <p>Molho de tomate, mussarela, manjericão fresco.</p>
+                </div>
+            </div>
+    
+            <div class="conteiner-pizza-cardapio">
+                <div><img class="img-pizza-cardapio" src="imagens/pizza-peperoni.jpg" alt="Pizza marguerita"></div>
+                <div class="descricao-cardapio">
+                    <h2>Pizza peperoni</h2>
+                    <p>Molho de tomate, peperoni, queijo mussarela.</p>
+                </div>
+            </div>
+    
+            <div class="conteiner-pizza-cardapio">
+                <div><img class="img-pizza-cardapio" src="imagens/pizza-brasileira.jpg" alt="Pizza marguerita"></div>
+                <div class="descricao-cardapio">
+                    <h2>Pizza brasileira</h2>
+                    <p>Ervilha, milho, palmito, tomate, mussarela e manjericão.</p>
+                </div>
+            </div>
+    
+            <div class="conteiner-pizza-cardapio">
+                <div><img class="img-pizza-cardapio" src="imagens/pizza-portuguesa.jpg" alt="Pizza marguerita"></div>
+                <div class="descricao-cardapio">
+                    <h2>Pizza portuguesa</h2>
+                    <p>Ovos, cebola, azeitona, ervilha, queijo e presunto.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="sobre-nos">
+            <div class="container-texto-sobre-nos">
+                <h1>Sobre nós</h1>
+                <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas.</p>
+            </div>
+        </div>
+    
+        <div id="contato">
+            <h1>Contato</h1>
+            <p>Entre em contato para fazer pedidos ou tirar suas dúvidas.</p>
+    
+            <div class="info-contato">
+                <div class="coluna">
+                    <p><strong>Endereço:</strong> Avenida Onze de Outubro, nº 123<br>
+                        Centro, Cidade Qualquer/RJ CEP: 12345-678
+                    </p>
+                </div>
+            
+                <div class="coluna">
+                    <p><strong>Telefone:</strong> (11) 5555-5555<br>
+                        <strong>E-mail:</strong> <a href="mailto:contato@alessios.pizza">exemplo@gmail.com</a>
+                    </p>
+                </div>
+            
+                <div class="coluna">
+                    <p><strong>Horário de Funcionamento:</strong><br>
+                        Segunda a Sábado: 11h00 às 23h00<br>
+                        Domingo: 16h00 às 23h00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sugestao-pizza">
+            <h1>Faça o seu pedido!</h1>
+
+            <div class="formulario">
+                <form>
+                    <div class="elemento-formulario">
+                        <label for="opcao-pizza">Escolha uma pizza!</label> <br>
+                        <select name="tipo-pizza" id="tipo-pizza">
+                            <option value="escolha-tipo" selected>Selecione uma pizza</option>
+                            <option value="pizza-marguerita">Pizza marguerita</option>
+                            <option value="pizza-peperoni">Pizza peperoni</option>
+                            <option value="pizza-brasileira">Pizza brasileira</option>
+                            <option value="pizza-portuguesa">Pizza portuguesa</option>
+                        </select> <br>
+                    </div>
+
+                    <div class="elemento-formulario">
+                        <label for="">Quantas pizzas vai pedir?</label><br>
+                        <input type="number" name="qtd-pizza" id="qtd-pizza">
+                    </div>
+    
+                    <div class="elemento-formulario">
+                        <h2>Quer adicionar algum ingrediente extra?</h2>
+                        <input type="checkbox" name="ingredientes" id="queijo-mussarela">
+                        <label for="queijo-mussarela">Queijo mussarela</label><br>
+                        <input type="checkbox" name="ingredientes" id="extrato-de-tomate">
+                        <label for="extrato-de-tomate">Molho de tomate</label><br>
+                        <input type="checkbox" name="ingredientes" id="catupiry">
+                        <label for="catupiry">Catupiry</label><br>
+                        <input type="checkbox" name="ingredientes" id="cebola">
+                        <label for="cebola">Cebola</label><br>
+                    </div>
+
+                    <div class="elemento-formulario">
+                        <label for="observacao-pedido">Observações da pizza</label> <br>
+                        <textarea 
+                            name="descricao-pizza" 
+                            id="descricao-pizza" 
+                            placeholder="Ex.: tirar queijo...."
+                            rows="4"
+                            wrap="soft"
+                            style="width: 100%; padding: 8px; box-sizing: border-box;"></textarea> <br>
+                    </div>
+    
+                    <div class="botao-enviar"><input id="botao-enviar" type="submit" value="Enviar"></div>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+   <footer>
+        <p>© 2024 Alessio's Pizzaria</p>
+        <a href="https://www.instagram.com/" target="_blank"><i data-feather="instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i data-feather="facebook"></i></a>
+        <a href="https://x.com/" target="_blank"><i data-feather="twitter"></i></a>
+   </footer>
+
+   <script>
+    feather.replace();
+  </script>
+</body>
+</html>
